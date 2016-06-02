@@ -52,3 +52,5 @@
 Pos eso que se pone a hacerte la cuenta regresiva para lanzar varios torpedos nucleares o algo.
 
 >for (a= 10; a> -1; a--){console.log(a);}
+
+Logs 10,9,8,7,6,5,4,3,2,1,0
