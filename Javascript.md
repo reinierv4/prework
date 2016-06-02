@@ -5,7 +5,7 @@
 	var claim;
 	function claimForMarcos (country,thing) {
 
-	claim = "In the name of " + country + " I claim this " + thing + " for Marcos!" 
+	claim = "In the name of " + country + " I claim this " + thing + " for Marcos!"
 
 	return claim;
 
@@ -26,7 +26,7 @@
 ## Arrays
 
 ## Normal Array
-	
+
 	var countries;
 
 	countries = [];
@@ -47,4 +47,8 @@
 	> Why does it not take "Jack"?
 
 
-[hola](http://www.google.es)
+## Increments Backwards (Wich would mean it decreases)
+
+Pos eso que se pone a hacerte la cuenta regresiva para lanzar varios torpedos nucleares o algo.
+
+>for (a= 10; a> -1; a--){console.log(a);}
