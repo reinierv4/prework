@@ -54,3 +54,19 @@ Pos eso que se pone a hacerte la cuenta regresiva para lanzar varios torpedos nu
 >for (a= 10; a> -1; a--){console.log(a);}
 
 Logs 10,9,8,7,6,5,4,3,2,1,0
+
+
+## If expressions
+
+Esta es la configuración general para hacerse un "If" en javascript
+
+	if (<conditional_expression>) {
+	  <instructions>
+	}
+	[else if (<conditional_expression>) {
+	  <instructions>
+	}]
+	...
+	[else {
+	  <instructions>
+	}]
