@@ -70,3 +70,59 @@ Esta es la configuración general para hacerse un "If" en javascript
 	[else {
 	  <instructions>
 	}]
+
+
+## Set de opciones para hacer
+
+First it tells you wich variables you can choose and then asks you to choose form this menu
+
+	var command = prompt('Show help for command... (prompt, alert, confirm)');
+
+	switch (command) {
+	  case 'prompt':
+	    alert('Shows a modal dialog asking the user to enter a value.');
+	  break;
+
+	  case 'alert':
+	    alert('this is an alert so be ALERTED.');
+	  break;
+
+	  case 'confirm':
+	    alert('I confirm with an ALERT because thats what I do.');
+	  break;
+
+	  default:
+	    alert('What is this' + command 'you are trying to tell me?');
+	  break;
+	 }
+
+## Do various functions
+
+	When you want to call various functions , you will be using this pretty configuration
+	this is creating various functions with return math operations.
+
+	function avg(anyArray) {
+	'use strict';
+
+	if (!Array.isArray(anyArray)) {
+		anyArray = arguments;
+	}
+
+	var sum = 0;
+	for (var index = 0, length = anyArray.length; index < length; index += 1) {
+		sum += anyArray[index];
+	}
+	return sum / length;
+	}
+
+## calling objects with THIS
+
+var computer = {
+  name: 'Deep Thought',
+  getTheAnswerToLife: function () {
+    return console.log(this.name + ': 42');
+  },
+  testThis: function () {
+    console.log(this === computer);
+  }
+};
