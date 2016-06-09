@@ -126,3 +126,13 @@ var computer = {
     console.log(this === computer);
   }
 };
+
+
+## Markdown
+Darkgreyish color I like : #555
+
+Twitter color I like :  #1dcaff
+
+RUBY COLLECTIONS
+each aplica cosas a todo
+["carrot","apples",""]
