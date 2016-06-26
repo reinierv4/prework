@@ -1,3 +1,6 @@
+
+
+
 var a = "Look at a cats paw while it sleeps";
 var b = "Get my moleskiner and draw my cat while it is sleeping";
 var c = "Tickle my cat till it wakes up annoyed and bites my hand";
@@ -34,7 +37,7 @@ function question2() {
     alert("Seriously just say (Yes or No)");
     return question2();
   }
-  responses.push(firstQuestion); 
+  responses.push(firstQuestion);
 }
 question2();
 
@@ -43,17 +46,17 @@ function question3() {
   var js = prompt("In a regular summer day I : Look at a cats paw while it sleeps | Get my moleskiner and draw my cat while it is sleeping | Tickle my cat till it wakes up annoyed and bites my hand ");
   js = js.toLowerCase();
   switch (js) {
-        case js ===  a 
+        case js ===  a
         option = console.log(kinda creepy dont you think?)
         break;
 
-        case js ===  b 
+        case js ===  b
         option = console.log(thats good to know)
         break;
 
         case js === c
         option = alert("you are a bad person")
-        	
+
         break;
 
 
