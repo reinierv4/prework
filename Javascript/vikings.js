@@ -8,6 +8,45 @@ var dicemaker = function(min,max) {
 var vikings = ["Ignacio","Nacho","Magnus","Satwat","Daniel","Tristan","Fernanda","Alejandro",
 "Reniere","Marcos","Lluis","Raul","Alfonso","Isaura","Claudia","Alvaro","Alberto Marcos"]
 
+generateOdds = function(hp_1, hp_2){
+  var winnerA = []
+  var winnerB =[]
+  var tie = []
+  
+  for(var i = 0; i<100000; i++){
+    fightTillDead();
+  }
+  
+  function fightTillDead(){
+    var health1 = hp_1;
+    var health2= hp_2;
+
+    while(health1>0 && health2>0){
+      health1-=strengthGnrator();
+      health2-=strengthGnrator();
+     }
+
+     if(health1<0 && health2<0){
+        tie.push('1')
+      }else if(health1<0){
+        winnerA.push('1')
+     }else{
+        winnerB.push('1')
+     }
+    
+  }
+
+  var HomeOdd = (1/(winnerA.length/100000)/1.1).toFixed(2)
+  var TieOdd = (1/(tie.length/100000)/1.1).toFixed(2)
+  var AwayOdd = (1/(winnerB.length/100000)/1.1).toFixed(2)
+
+  return{
+    home: HomeOdd,
+    tie: TieOdd,
+    away: AwayOdd
+  }
+}
+
 function nameGenerator(){
   return vikings[dicemaker(0,16)];
 }
